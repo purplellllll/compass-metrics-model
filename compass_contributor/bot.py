@@ -103,7 +103,7 @@ class BotService:
                 community_contributor_list = community_dict.get(hit_source["community"], [])
                 community_contributor_list.append(hit_source["contributor"])
                 community_dict[hit_source["community"]] = community_contributor_list
-            elif hit_source["community"] and hit_source["repo"]:
+            elif hit_source["repo"]:
                 repo_contributor_list = repo_dict.get(hit_source["repo"], [])
                 repo_contributor_list.append(hit_source["contributor"])
                 repo_dict[hit_source["repo"]] = repo_contributor_list
